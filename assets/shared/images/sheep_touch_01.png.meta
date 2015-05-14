@@ -1,0 +1,45 @@
+{
+  "__type__": "Editor.TextureMeta",
+  "ver": 0,
+  "uuid": "621a955c-a865-44b6-8a40-90a0326c2c90",
+  "subRawData": [
+    {
+      "asset": {
+        "__type__": "Fire.Sprite",
+        "_name": "sheep_touch_01",
+        "_objFlags": 0,
+        "pivot": {
+          "__type__": "Fire.Vec2",
+          "x": 0.5,
+          "y": 0.5
+        },
+        "trimX": 23,
+        "trimY": 1,
+        "width": 173,
+        "height": 126,
+        "texture": {
+          "__uuid__": "621a955c-a865-44b6-8a40-90a0326c2c90"
+        },
+        "rotated": false,
+        "x": 23,
+        "y": 1,
+        "rawWidth": 228,
+        "rawHeight": 159,
+        "pixelLevelHitTest": false,
+        "alphaThreshold": 0.1
+      },
+      "meta": {
+        "__type__": "Editor.SpriteMeta",
+        "ver": 0,
+        "uuid": "0ea51427-c6cf-426a-91f5-1cbf6da343e3",
+        "atlasTag": "default",
+        "trimType": 0,
+        "trimThreshold": 1,
+        "rawTextureUuid": "621a955c-a865-44b6-8a40-90a0326c2c90"
+      }
+    }
+  ],
+  "type": 1,
+  "wrapMode": 1,
+  "filterMode": 1
+}
