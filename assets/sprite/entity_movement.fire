@@ -15,6 +15,9 @@
       },
       {
         "__id__": 11
+      },
+      {
+        "__id__": 16
       }
     ],
     "camera": {
@@ -315,5 +318,54 @@
     "_enabled": true,
     "runDuration": 2,
     "jumpDuration": 1
+  },
+  {
+    "__type__": "Fire.Entity",
+    "_name": "README",
+    "_objFlags": 0,
+    "transform": {
+      "__id__": 17
+    },
+    "_active": true,
+    "_parent": null,
+    "_children": [],
+    "_components": [
+      {
+        "__id__": 17
+      },
+      {
+        "__id__": 18
+      }
+    ]
+  },
+  {
+    "__type__": "Fire.Transform",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 16
+    },
+    "_enabled": true,
+    "_position": {
+      "__type__": "Fire.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_rotation": 0,
+    "_scale": {
+      "__type__": "Fire.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "a6e8fzewkJMyY8EYIaQjrc0",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 16
+    },
+    "_enabled": true,
+    "text": "How can you make game without moving \nsprites around? In this demo we use Entity.animate\nfunction to move an entity along a series of positions.\n\nEntity.animate is a function that can animate any \nproperty in any component over time. We call this \nfunction with a series of key frames, each one specify\na certain value for one of more properties. We also need\n to specify a normalized time mark for a key frame with \n'offset' property with a value from 0 to 1. \n\n0 means at the very beginning of the animation process; \n1 means the key frame is at the very end.\n\nEntity.animate function also provides callback when\nthe last key frame is reached. You can use this to \nconnect multiple animate process or start whatever logic\n you plan in the script.          "
   }
 ]

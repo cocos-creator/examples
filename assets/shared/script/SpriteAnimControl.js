@@ -10,33 +10,34 @@ var Comp = Fire.Class({
     extends: Fire.Component,
     
     constructor: function() {
-        //instance variable to store the SpriteAnimation component in this entity
+        // instance variable to store the SpriteAnimation component in this entity
         this.anim = null;
     },
     
     properties: {
-        interval: { //the interval between each delayed action
+        interval: { // the interval between each delayed action
             default: 2000
         }
     },
     
     onLoad: function() {
-        //get SpriteAnimation component
+        // get SpriteAnimation component
         this.anim = this.getComponent('Fire.SpriteAnimation');
     },
     
-    // use this for initialization
+    //  use this for initialization
     start: function () {
+        // store component instance to self
         var self = this;
         setTimeout(function() {
-            //stop the current playing animation
+            // stop the current playing animation
             self.anim.stop();
             setTimeout(function() {
-                //play an animation by its SpriteAnimationState name, 
-                //which by default is the same as the clip asset name
+                // play an animation by its SpriteAnimationState name, 
+                // which by default is the same as the clip asset name
                 self.anim.play('run');
                 setTimeout(function() {
-                    //play another animation
+                    // play another animation
                     self.anim.play('hit');
                 }, self.interval);
             }, self.interval);
