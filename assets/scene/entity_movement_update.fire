@@ -135,7 +135,7 @@
       "b": 0.18823529411764706,
       "a": 1
     },
-    "_size": 1029.085278522464,
+    "_size": 327,
     "_contentStrategy": 1
   },
   {
@@ -367,6 +367,6 @@
       "__id__": 16
     },
     "_enabled": true,
-    "text": ""
+    "text": "What we want to achieve is the same as EntityMovment.\nInstead of using Entity.animate,  this time we will move \nthe entity by set position in 'update' function each frame.\n\nAnother powerful tool we will be introducing is Vec2.lerp.\nIt's a helper function to linearly interpolates between two \nVec2 values by amount 'ratio'. "
   }
 ]
