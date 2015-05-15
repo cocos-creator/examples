@@ -313,7 +313,7 @@
       "__id__": 11
     },
     "_enabled": true,
-    "interval": 2000
+    "interval": 2
   },
   {
     "__type__": "Fire.Entity",

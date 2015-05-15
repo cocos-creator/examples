@@ -28,19 +28,20 @@ var Comp = Fire.Class({
     //  use this for initialization
     start: function () {
         // store component instance to self
-        var self = this;
-        setTimeout(function() {
-            // stop the current playing animation
-            self.anim.stop();
-            setTimeout(function() {
-                // play an animation by its SpriteAnimationState name, 
-                // which by default is the same as the clip asset name
-                self.anim.play('run');
-                setTimeout(function() {
-                    // play another animation
-                    self.anim.play('hit');
-                }, self.interval);
-            }, self.interval);
-        }, self.interval);        
+        this.invoke('stopAnim', this.interval);
+    },
+    
+    stopAnim: function () {
+        this.anim.stop();
+        this.invoke('playRun', this.interval);
+    },
+    
+    playRun: function () {
+        this.anim.play('run');  
+        this.invoke('playHit', this.interval);
+    },
+    
+    playHit: function () {
+        this.anim.play('hit');
     }
 });
