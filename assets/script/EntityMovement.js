@@ -10,14 +10,14 @@ var Comp = Fire.Class({
         // instance variable to store the SpriteAnimation component in this entity
         this.anim = null;
     },
-    
+
     properties: {
         // properties to set run and jump animation duration
         runDuration: 2,
         jumpDuration: 1,
         jumpHeight: 250
     },
-    
+
     onLoad: function() {
         // get SpriteAnimation component
         this.anim = this.getComponent(Fire.SpriteAnimation);
@@ -30,22 +30,22 @@ var Comp = Fire.Class({
         var startPos = this.transform.position;
         // play run sprite animation
         self.anim.play('run');
-        // start animate on this entity and create an AnimationNode as handle  
-        // so you can control it later 
+        // start animate on this entity and create an AnimationNode as handle
+        // so you can control it later
         var animNode1 = this.entity.animate(
             // first parameter is an array of key frames
             [
-                // Component name as first property 
+                // Component name as first property
                 {
                     "Fire.Transform": {
                         // property whose value to animate
                         "position": startPos // set startPos as the first key frame property's value
                     },
-                    // We also need to specify a normalized time mark for a key frame 
-                    // with 'offset' property with a value from 0 to 1. 
-                    // 0 means at the very beginning of the animation process; 
+                    // We also need to specify a normalized time mark for a key frame
+                    // with 'offset' property with a value from 0 to 1.
+                    // 0 means at the very beginning of the animation process;
                     // 1 means the key frame is at the very end.
-                    offset: 0 
+                    offset: 0
                 },
                 {
                     "Fire.Transform": {
@@ -53,7 +53,7 @@ var Comp = Fire.Class({
                     },
                     offset: 1
                 }
-            ], 
+            ],
             {
                 // delay the animation for a bit
                 delay: 0.5,
@@ -61,10 +61,10 @@ var Comp = Fire.Class({
                 duration: self.runDuration
             }
         );
-        // add a 'stop' event callback handler to the AnimationNode we just created 
+        // add a 'stop' event callback handler to the AnimationNode we just created
         animNode1.on('stop', function() {
             // get SpriteAnimationState for a certain clip
-            var jumpAnimState = self.anim.getAnimState('jump')
+            var jumpAnimState = self.anim.getAnimState('jump');
             // calculate the animation speed according to how long we want the duration
             jumpAnimState.speed = jumpAnimState.length/self.jumpDuration;
             // start play jump sprite animation
@@ -77,14 +77,14 @@ var Comp = Fire.Class({
                 offset: 0 // start key frame
               },{
                 "Fire.Transform": {
-                    "position": Fire.v2(0, this.jumpHeight)
+                    "position": Fire.v2(0, self.jumpHeight)
                 },
                 offset: 0.5 // the key frame in the middle
               },{
                 "Fire.Transform": {
                     "position": Fire.Vec2.zero
                 },
-                offset: 1 // the last key frame at the end                 
+                offset: 1 // the last key frame at the end
               }
             ], {
                 duration: self.jumpDuration
@@ -97,6 +97,6 @@ var Comp = Fire.Class({
 
     //  called every frame
     update: function () {
-        
+
     }
 });

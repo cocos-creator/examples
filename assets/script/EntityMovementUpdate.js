@@ -14,10 +14,10 @@ var Comp = Fire.Class({
         this.isPlayingJump = false;
         // start position of sheep
         this.startPos = null;
-        // timer to track how long the current entity animation elapsed 
+        // timer to track how long the current entity animation elapsed
         this.animTimer = 0;
     },
-    
+
     properties: {
         // properties to set run and jump animation duration
         runDuration: 2,
@@ -25,30 +25,30 @@ var Comp = Fire.Class({
         // set jump height
         jumpHeight: 250
     },
-    
+
     onLoad: function() {
         // get SpriteAnimation component
         this.anim = this.getComponent(Fire.SpriteAnimation);
-        // store sheep starting position 
+        // store sheep starting position
         this.startPos =  this.transform.position;
     },
-    
+
     start: function() {
         // when game starts, switch entity movement on by set the boolean to true
         this.isPlayingRun = true;
         // play sprite animation as it goes
         this.anim.play('run');
     },
-    
+
     update: function() {
-        // ratio is a normalized float value represents where we at from start position to end position 
+        // ratio is a normalized float value represents where we at from start position to end position
         var ratio;
         // we only do position updates when the run movement switch is on
         if(this.isPlayingRun) {
             // calculate ratio using current timer value and total animation duration
             ratio = this.animTimer/this.runDuration;
-            // lerp is a helper function to linearly interpolates between two Vec2 values 
-            // It interpolates between 'from' and 'to' by amount 'ratio'. 
+            // lerp is a helper function to linearly interpolates between two Vec2 values
+            // It interpolates between 'from' and 'to' by amount 'ratio'.
             this.transform.position = this.startPos.lerp(Fire.Vec2.zero, ratio);
             // increase timer each frame, Time.deltaTime is the time in seconds it took to complete the last frame
             this.animTimer += Fire.Time.deltaTime;
@@ -68,7 +68,7 @@ var Comp = Fire.Class({
                 this.anim.play('jump');
             }
         }
-        
+
         if (this.isPlayingJump) {
             ratio = this.animTimer/this.jumpDuration;
             // if ratio is smaller than half the whole progress, we should move up
@@ -83,8 +83,8 @@ var Comp = Fire.Class({
                 this.isPlayingJump = false;
                 // once all movement completes, play down to the ground sprite animation
                 this.anim.play('down');
-            }            
+            }
         }
-        
+
     }
 });

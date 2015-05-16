@@ -318,7 +318,7 @@
     "_enabled": true,
     "runDuration": 2,
     "jumpDuration": 1,
-    "jumpHeight": 250
+    "jumpHeight": 500
   },
   {
     "__type__": "Fire.Entity",
