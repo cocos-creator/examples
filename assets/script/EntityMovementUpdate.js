@@ -62,7 +62,7 @@ var Comp = Fire.Class({
                 // set start position for jump
                 this.startPos = this.transform.position;
                 // get SpriteAnimationState for a certain clip
-                var jumpAnimState = this.anim.getAnimState('jump')
+                var jumpAnimState = this.anim.getAnimState('jump');
                 // calculate the animation speed according to how long we want the duration
                 jumpAnimState.speed = jumpAnimState.length/this.jumpDuration;
                 this.anim.play('jump');
@@ -73,7 +73,7 @@ var Comp = Fire.Class({
             ratio = this.animTimer/this.jumpDuration;
             // if ratio is smaller than half the whole progress, we should move up
             if (ratio <= 0.5) {
-                this.transform.position = this.startPos.lerp( Fire.v2(0, this.jumpHeight), ratio);                
+                this.transform.position = this.startPos.lerp( Fire.v2(0, this.jumpHeight), ratio);
             } else { // if ratio is over half way, we should now move towards the ground
                 this.transform.position = Fire.v2(0, this.jumpHeight).lerp(this.startPos, ratio);
             }
