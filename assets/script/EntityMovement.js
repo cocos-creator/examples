@@ -55,10 +55,10 @@ var Comp = Fire.Class({
                 }
             ],
             {
-                // delay the animation for a bit
-                delay: 0.5,
-                // the total duration of the animation in seconds
-                duration: self.runDuration
+              // delay the animation for a bit
+              delay: 0.5,
+              // the total duration of the animation in seconds
+              duration: self.runDuration
             }
         );
         // add a 'stop' event callback handler to the AnimationNode we just created
