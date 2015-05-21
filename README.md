@@ -17,7 +17,17 @@ Also you should read the source code of the component we created for the example
 
 ## Examples
 
-- Static Sprite: basic sprite renderer example showing just a static sprite.
-- Sprite Animation: play sprite animation on a sprite, automatically and with scripting.
+### Components
+
+- [Static Sprite](/guides/components/static_sprite.md): basic sprite renderer example showing just a static sprite.
+- [Sprite Animation](/guides/components/sprite_animation.md): play sprite animation on a sprite, automatically and with scripting.
+- [Sliced Sprite](/guides/components/sliced_sprite.md): scale a sprite without losing border sharpness. Best use case is scalable UI backgrounds and buttons.
+
+### Gameplay
+
 - Entity Movement: moves an entity from one position to another overtime, with the help of `Entity.animate` function.
 - Entity Movement with Update: moves an entity from one position to another overtime. This time we hand crafted the position setting in `update` function called each frame.
+
+### UI
+
+- [Basic UI Element](/guides/ui/basic_ui.md)

@@ -1,0 +1,262 @@
+[
+  {
+    "__type__": "Fire.Scene",
+    "_name": "",
+    "_objFlags": 0,
+    "entities": [
+      {
+        "__id__": 1
+      },
+      {
+        "__id__": 4
+      },
+      {
+        "__id__": 7
+      },
+      {
+        "__id__": 10
+      }
+    ],
+    "camera": {
+      "__id__": 3
+    }
+  },
+  {
+    "__type__": "Fire.Entity",
+    "_name": "Main Camera",
+    "_objFlags": 0,
+    "transform": {
+      "__id__": 2
+    },
+    "_active": true,
+    "_parent": null,
+    "_children": [],
+    "_components": [
+      {
+        "__id__": 2
+      },
+      {
+        "__id__": 3
+      }
+    ]
+  },
+  {
+    "__type__": "Fire.Transform",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_position": {
+      "__type__": "Fire.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_rotation": 0,
+    "_scale": {
+      "__type__": "Fire.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "Fire.Camera",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_background": {
+      "__type__": "Fire.Color",
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 1
+    },
+    "_size": 800,
+    "_contentStrategy": 1
+  },
+  {
+    "__type__": "Fire.Entity",
+    "_name": "Scene Camera",
+    "_objFlags": 3080,
+    "transform": {
+      "__id__": 5
+    },
+    "_active": true,
+    "_parent": null,
+    "_children": [],
+    "_components": [
+      {
+        "__id__": 5
+      },
+      {
+        "__id__": 6
+      }
+    ]
+  },
+  {
+    "__type__": "Fire.Transform",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 4
+    },
+    "_enabled": true,
+    "_position": {
+      "__type__": "Fire.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_rotation": 0,
+    "_scale": {
+      "__type__": "Fire.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "Fire.Camera",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 4
+    },
+    "_enabled": true,
+    "_background": {
+      "__type__": "Fire.Color",
+      "r": 0.18823529411764706,
+      "g": 0.18823529411764706,
+      "b": 0.18823529411764706,
+      "a": 1
+    },
+    "_size": 1020.369059611865,
+    "_contentStrategy": 1
+  },
+  {
+    "__type__": "Fire.Entity",
+    "_name": "sliced_sprite",
+    "_objFlags": 0,
+    "transform": {
+      "__id__": 8
+    },
+    "_active": true,
+    "_parent": null,
+    "_children": [],
+    "_components": [
+      {
+        "__id__": 8
+      },
+      {
+        "__id__": 9
+      }
+    ]
+  },
+  {
+    "__type__": "Fire.Transform",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 7
+    },
+    "_enabled": true,
+    "_position": {
+      "__type__": "Fire.Vec2",
+      "x": 1.5000000000000056,
+      "y": 239.73752362344786
+    },
+    "_rotation": 0,
+    "_scale": {
+      "__type__": "Fire.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "Fire.SpriteRenderer",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 7
+    },
+    "_enabled": true,
+    "_sprite": {
+      "__uuid__": "c3ec5d91-c43f-4f05-b3ec-903ea3036343"
+    },
+    "_color": {
+      "__type__": "Fire.Color",
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "_useCustomSize": true,
+    "width_": 599,
+    "height_": 500,
+    "_imageType": 1
+  },
+  {
+    "__type__": "Fire.Entity",
+    "_name": "logo",
+    "_objFlags": 0,
+    "transform": {
+      "__id__": 11
+    },
+    "_active": true,
+    "_parent": null,
+    "_children": [],
+    "_components": [
+      {
+        "__id__": 11
+      },
+      {
+        "__id__": 12
+      }
+    ]
+  },
+  {
+    "__type__": "Fire.Transform",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 10
+    },
+    "_enabled": true,
+    "_position": {
+      "__type__": "Fire.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_rotation": 0,
+    "_scale": {
+      "__type__": "Fire.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "Fire.SpriteRenderer",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 10
+    },
+    "_enabled": true,
+    "_sprite": {
+      "__uuid__": "bbb80ae3-6e32-4669-93f7-6a057d3d876c"
+    },
+    "_color": {
+      "__type__": "Fire.Color",
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "_useCustomSize": false,
+    "width_": 416,
+    "height_": 135,
+    "_imageType": 0
+  }
+]
