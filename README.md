@@ -22,6 +22,8 @@ Also you should read the source code of the component we created for the example
 - [Static Sprite](/guides/components/static_sprite.md): basic sprite renderer example showing just a static sprite.
 - [Sprite Animation](/guides/components/sprite_animation.md): play sprite animation on a sprite, automatically and with scripting.
 - [Sliced Sprite](/guides/components/sliced_sprite.md): scale a sprite without losing border sharpness. Best use case is scalable UI backgrounds and buttons.
+- [Bitmap Font](/guides/components/bitmap_font.md): display text using BitmapFont resources and change text content with scripting.
+- [Dynamic Font](/guides/components/dynamic_font.md): display text using system font to avoid including a big font file in your game!
 
 ### Gameplay
 
