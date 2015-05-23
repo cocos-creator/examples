@@ -9,7 +9,7 @@ A collection of examples to demonstrate how basic components and scripting works
 
 ## How To Use
 
-You should get started by loading a scene from [/assets/scene]. Each scene has entities and components set up properly with a README entity that explain what we do here.
+You should get started by loading a scene from [/assets/scene](/assets/scene). Each scene has entities and components set up properly with a README entity that explain what we do here.
 
 Then hit the play button at the top of the editor to see what it does. Then check out each entity and component to see how it's done.
 
