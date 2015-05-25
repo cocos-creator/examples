@@ -1,0 +1,230 @@
+[
+  {
+    "__type__": "Fire.Scene",
+    "_name": "",
+    "_objFlags": 0,
+    "entities": [
+      {
+        "__id__": 1
+      },
+      {
+        "__id__": 4
+      },
+      {
+        "__id__": 7
+      }
+    ],
+    "camera": {
+      "__id__": 3
+    }
+  },
+  {
+    "__type__": "Fire.Entity",
+    "_name": "Main Camera",
+    "_objFlags": 0,
+    "transform": {
+      "__id__": 2
+    },
+    "_active": true,
+    "_parent": null,
+    "_children": [],
+    "_components": [
+      {
+        "__id__": 2
+      },
+      {
+        "__id__": 3
+      }
+    ]
+  },
+  {
+    "__type__": "Fire.Transform",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_position": {
+      "__type__": "Fire.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_rotation": 0,
+    "_scale": {
+      "__type__": "Fire.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "Fire.Camera",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_background": {
+      "__type__": "Fire.Color",
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 1
+    },
+    "_size": 800,
+    "_contentStrategy": 1
+  },
+  {
+    "__type__": "Fire.Entity",
+    "_name": "Scene Camera",
+    "_objFlags": 3080,
+    "transform": {
+      "__id__": 5
+    },
+    "_active": true,
+    "_parent": null,
+    "_children": [],
+    "_components": [
+      {
+        "__id__": 5
+      },
+      {
+        "__id__": 6
+      }
+    ]
+  },
+  {
+    "__type__": "Fire.Transform",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 4
+    },
+    "_enabled": true,
+    "_position": {
+      "__type__": "Fire.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_rotation": 0,
+    "_scale": {
+      "__type__": "Fire.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "Fire.Camera",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 4
+    },
+    "_enabled": true,
+    "_background": {
+      "__type__": "Fire.Color",
+      "r": 0.18823529411764706,
+      "g": 0.18823529411764706,
+      "b": 0.18823529411764706,
+      "a": 1
+    },
+    "_size": 0,
+    "_contentStrategy": 1
+  },
+  {
+    "__type__": "Fire.Entity",
+    "_name": "spineboy",
+    "_objFlags": 0,
+    "transform": {
+      "__id__": 8
+    },
+    "_active": true,
+    "_parent": null,
+    "_children": [],
+    "_components": [
+      {
+        "__id__": 8
+      },
+      {
+        "__id__": 9
+      },
+      {
+        "__id__": 12
+      }
+    ]
+  },
+  {
+    "__type__": "Fire.Transform",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 7
+    },
+    "_enabled": true,
+    "_position": {
+      "__type__": "Fire.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_rotation": 0,
+    "_scale": {
+      "__type__": "Fire.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "Fire.Spine.Skeleton",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 7
+    },
+    "_enabled": true,
+    "_skeletonData": {
+      "__id__": 10
+    },
+    "_initialSkinName": "",
+    "_debugSlots": false,
+    "_debugBones": false,
+    "defaultAnimation": "",
+    "loop": false,
+    "_timeScale": 1
+  },
+  {
+    "__type__": "Fire.Spine.SkeletonDataAsset",
+    "_name": "spineboy",
+    "_objFlags": 0,
+    "_atlasAsset": {
+      "__id__": 11
+    },
+    "_skeletonJson": {
+      "__uuid__": "ef7ef4d2-90bd-4c64-aa07-b151a92fc99b"
+    },
+    "scale": 1
+  },
+  {
+    "__type__": "Fire.Spine.AtlasAsset",
+    "_name": "spineboy.atlas",
+    "_objFlags": 0,
+    "textures": [
+      {
+        "__uuid__": "a4a0d7fc-263e-4d99-b438-c5cb6370ce96"
+      }
+    ],
+    "atlasFile": {
+      "__uuid__": "354cd0e4-7760-4f33-8cab-c582166deb1c"
+    }
+  },
+  {
+    "__type__": "05c3bxL2d1DFYN8YI5gCkVz",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 7
+    },
+    "_enabled": true,
+    "interval": 2
+  }
+]

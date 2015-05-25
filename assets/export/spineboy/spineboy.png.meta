@@ -1,0 +1,49 @@
+{
+  "__type__": "Editor.TextureMeta",
+  "ver": 0,
+  "uuid": "a4a0d7fc-263e-4d99-b438-c5cb6370ce96",
+  "subRawData": [
+    {
+      "asset": {
+        "__type__": "Fire.Sprite",
+        "_name": "spineboy",
+        "_objFlags": 0,
+        "pivot": {
+          "__type__": "Fire.Vec2",
+          "x": 0.5,
+          "y": 0.5
+        },
+        "trimX": 20,
+        "trimY": 2,
+        "width": 980,
+        "height": 240,
+        "texture": {
+          "__uuid__": "a4a0d7fc-263e-4d99-b438-c5cb6370ce96"
+        },
+        "rotated": false,
+        "x": 20,
+        "y": 2,
+        "rawWidth": 1024,
+        "rawHeight": 256,
+        "pixelLevelHitTest": false,
+        "alphaThreshold": 0.1,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0
+      },
+      "meta": {
+        "__type__": "Editor.SpriteMeta",
+        "ver": 0,
+        "uuid": "4fe89358-ccf7-476a-b7e5-2096d7b3175f",
+        "atlasTag": "default",
+        "trimType": 0,
+        "trimThreshold": 1,
+        "rawTextureUuid": "a4a0d7fc-263e-4d99-b438-c5cb6370ce96"
+      }
+    }
+  ],
+  "type": 1,
+  "wrapMode": 1,
+  "filterMode": 1
+}

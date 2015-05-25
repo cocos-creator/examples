@@ -1,0 +1,12 @@
+{
+  "__type__": "Fire.Spine.SkeletonDataAsset",
+  "_name": "",
+  "_objFlags": 0,
+  "_atlasAsset": {
+    "__uuid__": "32ed7783-6473-440b-9119-43fad167e7dd"
+  },
+  "_skeletonJson": {
+    "__uuid__": "ef7ef4d2-90bd-4c64-aa07-b151a92fc99b"
+  },
+  "scale": 1
+}

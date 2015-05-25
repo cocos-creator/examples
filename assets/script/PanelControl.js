@@ -6,8 +6,8 @@ var Comp = Fire.Class({
   extends: Fire.Component,
 
   constructor: function() {
+    // original height of the panel
     this.origHeight = null;
-    //this._expandPanelAnimNode = null;
   },
 
   properties: {
@@ -15,11 +15,11 @@ var Comp = Fire.Class({
       default: null,
       type: require('Button')
     },
-    background: {
+    background: { //panel background
       default: null,
       type: Fire.SpriteRenderer
     },
-    expandedHeight: 500,
+    expandedHeight: 500, // height expand to
     textContent: {
       default: null,
       type: Fire.BitmapText
@@ -32,6 +32,7 @@ var Comp = Fire.Class({
 
   onLoad: function() {
     this.origHeight = this.background.customHeight;
+    // disable text and image in panel
     this.textContent.entity.active = false;
     this.star.active = false;
   },
@@ -47,27 +48,28 @@ var Comp = Fire.Class({
       "Fire.SpriteRenderer": {
         "customHeight": self.origHeight
       },
-      offset: 0
+      ratio: 0
     }, {
       "Fire.SpriteRenderer": {
         "customHeight": self.expandedHeight
       },
-      offset: 1
+      ratio: 1
     }], {
       duration: 0.5
     }).on('stop', function() {
+      // fade in text in panel, start with 0 alpha value
       self.textContent.entity.active = true;
       self.textContent.color = Fire.Color.transparent;
       self.textContent.entity.animate([{
         "Fire.BitmapText": {
           "color": Fire.color(1, 1, 1, 0)
         },
-        offset: 0
+        ratio: 0
       }, {
         "Fire.BitmapText": {
           "color": Fire.Color.white
         },
-        offset: 1
+        ratio: 1
       }], {
         duration: 0.3
       });
@@ -84,12 +86,12 @@ var Comp = Fire.Class({
       "Fire.SpriteRenderer": {
         "customHeight": self.expandedHeight
       },
-      offset: 0
+      ratio: 0
     }, {
       "Fire.SpriteRenderer": {
         "customHeight": self.origHeight
       },
-      offset: 1
+      ratio: 1
     }], {
       duration: 0.5
     }).on('stop', function(){
@@ -101,12 +103,12 @@ var Comp = Fire.Class({
       "Fire.BitmapText": {
         "color": Fire.Color.white
       },
-      offset: 0
+      ratio: 0
     }, {
       "Fire.BitmapText": {
         "color": Fire.color(1, 1, 1, 0)
       },
-      offset: 1
+      ratio: 1
     }], {
       duration: 0.3
     }).on('stop', function(){

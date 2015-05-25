@@ -1,0 +1,13 @@
+{
+  "__type__": "Fire.Spine.AtlasAsset",
+  "_name": "",
+  "_objFlags": 0,
+  "textures": [
+    {
+      "__uuid__": "a4a0d7fc-263e-4d99-b438-c5cb6370ce96"
+    }
+  ],
+  "atlasFile": {
+    "__uuid__": "354cd0e4-7760-4f33-8cab-c582166deb1c"
+  }
+}

@@ -42,16 +42,16 @@ var Comp = Fire.Class({
                         "position": startPos // set startPos as the first key frame property's value
                     },
                     // We also need to specify a normalized time mark for a key frame
-                    // with 'offset' property with a value from 0 to 1.
+                    // with 'ratio' property with a value from 0 to 1.
                     // 0 means at the very beginning of the animation process;
                     // 1 means the key frame is at the very end.
-                    offset: 0
+                    ratio: 0
                 },
                 {
                     "Fire.Transform": {
                         "position": Fire.Vec2.zero // set Vec2.zero as the last key frame property's value
                     },
-                    offset: 1
+                    ratio: 1
                 }
             ],
             {
@@ -74,17 +74,17 @@ var Comp = Fire.Class({
                 "Fire.Transform": {
                     "position": Fire.Vec2.zero
                 },
-                offset: 0 // start key frame
+                ratio: 0 // start key frame
               },{
                 "Fire.Transform": {
                     "position": Fire.v2(0, self.jumpHeight)
                 },
-                offset: 0.5 // the key frame in the middle
+                ratio: 0.5 // the key frame in the middle
               },{
                 "Fire.Transform": {
                     "position": Fire.Vec2.zero
                 },
-                offset: 1 // the last key frame at the end
+                ratio: 1 // the last key frame at the end
               }
             ], {
                 duration: self.jumpDuration

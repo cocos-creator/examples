@@ -55,7 +55,7 @@ var Button = Fire.Class({
       "Fire.SpriteRenderer": {
         "color": this.normalColor
       },
-      offset: 0
+      ratio: 0
     }, {
       "Fire.Transform": {
         "scale": this._origScale.mul(this.pressedScale)
@@ -63,7 +63,7 @@ var Button = Fire.Class({
       "Fire.SpriteRenderer": {
         "color": this.pressedColor
       },
-      offset: 1
+      ratio: 1
     }], {
       duration: this.animDuration
     });
@@ -89,7 +89,7 @@ var Button = Fire.Class({
       "Fire.SpriteRenderer": {
         "color": this.pressedColor
       },
-      offset: 0
+      ratio: 0
     }, {
       "Fire.Transform": {
         "scale": this._origScale
@@ -97,7 +97,7 @@ var Button = Fire.Class({
       "Fire.SpriteRenderer": {
         "color": this.normalColor
       },
-      offset: 1
+      ratio: 1
     }], {
       duration: this.animDuration
     });
