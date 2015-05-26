@@ -4,7 +4,9 @@ A collection of examples to demonstrate how basic components and scripting works
 
 [Fireball](https://github.com/fireball-x/fireball) is a hackable game editor for creating mobile and HTML5 games, built with extremely extendable structure.
 
-**Developed with Fireball v0.3.2**
+**Developed with Fireball v0.4.0**
+
+If you're reading this doc in your local file system, go to https://github.com/fireball-x/examples for better reading experience.
 
 
 ## How To Use
@@ -29,6 +31,8 @@ Also you should read the source code of the component we created for the example
 
 - [Entity Movement](/guides/gameplay/entity_movement.md): moves an entity from one position to another overtime, with the help of `Entity.animate` function.
 - [Entity Movement with Update](/guides/gameplay/entity_movement_update.md): moves an entity from one position to another overtime. This time we hand crafted the position setting in `update` function called each frame.
+- Keyboard Input: catch keyboard input with `Fire.Input.on('keydown')`.
+- Character Controller: using Spineboy with skeleton animation, we move the character around with keyboard input. We show how to manipulate character moving speed with keyboard input and switch animation state with speed changes. 
 
 ### UI
 
