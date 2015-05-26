@@ -27,8 +27,8 @@ Also you should read the source code of the component we created for the example
 
 ### Gameplay
 
-- Entity Movement: moves an entity from one position to another overtime, with the help of `Entity.animate` function.
-- Entity Movement with Update: moves an entity from one position to another overtime. This time we hand crafted the position setting in `update` function called each frame.
+- [Entity Movement](/guides/gameplay/entity_movement.md): moves an entity from one position to another overtime, with the help of `Entity.animate` function.
+- [Entity Movement with Update](/guides/gameplay/entity_movement_update.md): moves an entity from one position to another overtime. This time we hand crafted the position setting in `update` function called each frame.
 
 ### UI
 

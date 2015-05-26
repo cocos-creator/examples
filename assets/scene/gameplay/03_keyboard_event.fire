@@ -15,9 +15,6 @@
       },
       {
         "__id__": 11
-      },
-      {
-        "__id__": 16
       }
     ],
     "camera": {
@@ -176,8 +173,8 @@
     "_rotation": 0,
     "_scale": {
       "__type__": "Fire.Vec2",
-      "x": 0.7,
-      "y": 0.7
+      "x": 1,
+      "y": 1
     }
   },
   {
@@ -220,7 +217,7 @@
   },
   {
     "__type__": "Fire.Entity",
-    "_name": "sheep",
+    "_name": "keyReporter",
     "_objFlags": 0,
     "transform": {
       "__id__": 12
@@ -237,9 +234,6 @@
       },
       {
         "__id__": 14
-      },
-      {
-        "__id__": 15
       }
     ]
   },
@@ -249,104 +243,6 @@
     "_objFlags": 0,
     "entity": {
       "__id__": 11
-    },
-    "_enabled": true,
-    "_position": {
-      "__type__": "Fire.Vec2",
-      "x": 625.3798179779294,
-      "y": 0
-    },
-    "_rotation": 0,
-    "_scale": {
-      "__type__": "Fire.Vec2",
-      "x": 1,
-      "y": 1
-    }
-  },
-  {
-    "__type__": "Fire.SpriteRenderer",
-    "_name": "",
-    "_objFlags": 0,
-    "entity": {
-      "__id__": 11
-    },
-    "_enabled": true,
-    "_sprite": {
-      "__uuid__": "5ffcc4a9-a428-45cc-a179-bad4f689347c"
-    },
-    "_color": {
-      "__type__": "Fire.Color",
-      "r": 1,
-      "g": 1,
-      "b": 1,
-      "a": 1
-    },
-    "_useCustomSize": false,
-    "width_": 167,
-    "height_": 112,
-    "_imageType": 0
-  },
-  {
-    "__type__": "Fire.SpriteAnimation",
-    "_name": "",
-    "_objFlags": 0,
-    "entity": {
-      "__id__": 11
-    },
-    "_enabled": true,
-    "defaultAnimation": {
-      "__uuid__": "44d7fb53-27f6-4bf6-ad5f-546d90feda35"
-    },
-    "animations": [
-      {
-        "__uuid__": "44d7fb53-27f6-4bf6-ad5f-546d90feda35"
-      },
-      {
-        "__uuid__": "e49ec0dd-1dfb-40d7-86a8-61a19d0cea18"
-      },
-      {
-        "__uuid__": "a5942aa8-c354-46c5-95c7-977f2df64253"
-      }
-    ],
-    "_playAutomatically": false
-  },
-  {
-    "__type__": "0e809o9ANlIl7xJYiYFRKlz",
-    "_name": "",
-    "_objFlags": 0,
-    "entity": {
-      "__id__": 11
-    },
-    "_enabled": true,
-    "runDuration": 2,
-    "jumpDuration": 1,
-    "jumpHeight": 500
-  },
-  {
-    "__type__": "Fire.Entity",
-    "_name": "README",
-    "_objFlags": 0,
-    "transform": {
-      "__id__": 17
-    },
-    "_active": true,
-    "_parent": null,
-    "_children": [],
-    "_components": [
-      {
-        "__id__": 17
-      },
-      {
-        "__id__": 18
-      }
-    ]
-  },
-  {
-    "__type__": "Fire.Transform",
-    "_name": "",
-    "_objFlags": 0,
-    "entity": {
-      "__id__": 16
     },
     "_enabled": true,
     "_position": {
@@ -357,18 +253,39 @@
     "_rotation": 0,
     "_scale": {
       "__type__": "Fire.Vec2",
-      "x": 1,
-      "y": 1
+      "x": 2,
+      "y": 2
     }
   },
   {
-    "__type__": "a6e8fzewkJMyY8EYIaQjrc0",
+    "__type__": "Fire.BitmapText",
     "_name": "",
     "_objFlags": 0,
     "entity": {
-      "__id__": 16
+      "__id__": 11
     },
     "_enabled": true,
-    "text": "What we want to achieve is the same as EntityMovment.\nInstead of using Entity.animate,  this time we will move \nthe entity by set position in 'update' function each frame.\n\nAnother powerful tool we will be introducing is Vec2.lerp.\nIt's a helper function to linearly interpolates between two \nVec2 values by amount 'ratio'. "
+    "_bitmapFont": {
+      "__uuid__": "2b664820-bb7e-45a5-9564-47ef5a3e2568"
+    },
+    "_text": "Waiting for keyboard input...",
+    "_color": {
+      "__type__": "Fire.Color",
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "_anchor": 4,
+    "_align": 0
+  },
+  {
+    "__type__": "c14f8yjxWROxIpRghGyZAFI",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 11
+    },
+    "_enabled": true
   }
 ]

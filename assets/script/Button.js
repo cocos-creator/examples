@@ -114,12 +114,13 @@ var Button = Fire.Class({
     }
     this._origScale = this.transform.scale;
   },
-  // 载入时
+  //
   start: function() {
+    // register mousedown and mouseup event listener
     this.entity.on('mousedown', this.onMouseDown.bind(this));
     this.entity.on('mouseup', this.onMouseUp.bind(this));
   },
-  // 销毁时
+  //
   onDestroy: function() {
     this.entity.off('mousedown', this.onMouseDown.bind(this));
     this.entity.off('mouseup', this.onMouseUp.bind(this));
