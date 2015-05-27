@@ -1,45 +1,45 @@
 {
   "__type__": "Editor.TextureMeta",
   "ver": 0,
-  "uuid": "34259760-3ae1-40f8-8615-321643cde779",
+  "uuid": "f8c54c0c-9afa-431a-96d8-0c3c23dd891c",
   "subRawData": [
     {
       "asset": {
         "__type__": "Fire.Sprite",
-        "_name": "ui_panel",
+        "_name": "particle_meteor",
         "_objFlags": 0,
         "pivot": {
           "__type__": "Fire.Vec2",
           "x": 0.5,
-          "y": 1
+          "y": 0.5
         },
-        "trimX": 0,
-        "trimY": 0,
-        "width": 151,
-        "height": 101,
+        "trimX": 1,
+        "trimY": 1,
+        "width": 29,
+        "height": 29,
         "texture": {
-          "__uuid__": "34259760-3ae1-40f8-8615-321643cde779"
+          "__uuid__": "f8c54c0c-9afa-431a-96d8-0c3c23dd891c"
         },
         "rotated": false,
-        "x": 0,
-        "y": 0,
-        "rawWidth": 151,
-        "rawHeight": 101,
+        "x": 1,
+        "y": 1,
+        "rawWidth": 32,
+        "rawHeight": 32,
         "pixelLevelHitTest": false,
         "alphaThreshold": 0.1,
-        "borderTop": 60,
-        "borderBottom": 28,
-        "borderLeft": 25,
-        "borderRight": 25
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0
       },
       "meta": {
         "__type__": "Editor.SpriteMeta",
         "ver": 0,
-        "uuid": "c3ec5d91-c43f-4f05-b3ec-903ea3036343",
+        "uuid": "acdd63c9-4a28-43a2-a6a3-f10f907b3bec",
         "atlasTag": "default",
         "trimType": 0,
         "trimThreshold": 1,
-        "rawTextureUuid": "34259760-3ae1-40f8-8615-321643cde779"
+        "rawTextureUuid": "f8c54c0c-9afa-431a-96d8-0c3c23dd891c"
       }
     }
   ],

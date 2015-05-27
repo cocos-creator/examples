@@ -1,0 +1,269 @@
+[
+  {
+    "__type__": "Fire.Scene",
+    "_name": "",
+    "_objFlags": 0,
+    "entities": [
+      {
+        "__id__": 1
+      },
+      {
+        "__id__": 4
+      },
+      {
+        "__id__": 7
+      }
+    ],
+    "camera": {
+      "__id__": 3
+    }
+  },
+  {
+    "__type__": "Fire.Entity",
+    "_name": "Main Camera",
+    "_objFlags": 0,
+    "transform": {
+      "__id__": 2
+    },
+    "_active": true,
+    "_parent": null,
+    "_children": [],
+    "_components": [
+      {
+        "__id__": 2
+      },
+      {
+        "__id__": 3
+      }
+    ]
+  },
+  {
+    "__type__": "Fire.Transform",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_position": {
+      "__type__": "Fire.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_rotation": 0,
+    "_scale": {
+      "__type__": "Fire.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "Fire.Camera",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_background": {
+      "__type__": "Fire.Color",
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 1
+    },
+    "_size": 50,
+    "_contentStrategy": 1
+  },
+  {
+    "__type__": "Fire.Entity",
+    "_name": "Scene Camera",
+    "_objFlags": 3080,
+    "transform": {
+      "__id__": 5
+    },
+    "_active": true,
+    "_parent": null,
+    "_children": [],
+    "_components": [
+      {
+        "__id__": 5
+      },
+      {
+        "__id__": 6
+      }
+    ]
+  },
+  {
+    "__type__": "Fire.Transform",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 4
+    },
+    "_enabled": true,
+    "_position": {
+      "__type__": "Fire.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_rotation": 0,
+    "_scale": {
+      "__type__": "Fire.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "Fire.Camera",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 4
+    },
+    "_enabled": true,
+    "_background": {
+      "__type__": "Fire.Color",
+      "r": 0.18823529411764706,
+      "g": 0.18823529411764706,
+      "b": 0.18823529411764706,
+      "a": 1
+    },
+    "_size": 90.48581097958768,
+    "_contentStrategy": 1
+  },
+  {
+    "__type__": "Fire.Entity",
+    "_name": "smoke",
+    "_objFlags": 0,
+    "transform": {
+      "__id__": 8
+    },
+    "_active": true,
+    "_parent": null,
+    "_children": [],
+    "_components": [
+      {
+        "__id__": 8
+      },
+      {
+        "__id__": 9
+      },
+      {
+        "__id__": 10
+      }
+    ]
+  },
+  {
+    "__type__": "Fire.Transform",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 7
+    },
+    "_enabled": true,
+    "_position": {
+      "__type__": "Fire.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_rotation": 0,
+    "_scale": {
+      "__type__": "Fire.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "Fire.ParticleSystem",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 7
+    },
+    "_enabled": true,
+    "_baseSprite": {
+      "__uuid__": "70808742-c2c9-4f94-8529-dfd1dd14cf50"
+    },
+    "_totalParticles": 150,
+    "_duration": 0.1,
+    "_emissionRate": 1000,
+    "_life": 0.05,
+    "_lifeVar": 0.5,
+    "_startSize": 30.459629999999997,
+    "_startSizeVar": 5.37,
+    "_endSize": 3,
+    "_endSizeVar": 5,
+    "_angle": 0,
+    "_angleVar": 360,
+    "_startColor": {
+      "__type__": "Fire.Color",
+      "r": 0.7414181232452393,
+      "g": 0.7530884146690369,
+      "b": 0.7467924356460571,
+      "a": 1
+    },
+    "_startColorVar": {
+      "__type__": "Fire.Color",
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "_endColor": {
+      "__type__": "Fire.Color",
+      "r": 0.46695250272750854,
+      "g": 0.4506416916847229,
+      "b": 0.478668212890625,
+      "a": 1
+    },
+    "_endColorVar": {
+      "__type__": "Fire.Color",
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "_positionType": 0,
+    "_positionVar": {
+      "__type__": "Fire.Vec2",
+      "x": 0,
+      "y": 4
+    },
+    "_startSpin": 0,
+    "_startSpinVar": 0,
+    "_endSpin": 0,
+    "_endSpinVar": 0,
+    "_emitterMode": 0,
+    "_gravity": {
+      "__type__": "Fire.Vec2",
+      "x": 0,
+      "y": -100
+    },
+    "_speed": 150,
+    "_speedVar": 0,
+    "_radialAccel": -100,
+    "_radialAccelVar": 100,
+    "_tangentialAccel": 0,
+    "_tangentialAccelVar": 0,
+    "_startRadius": 300,
+    "_startRadiusVar": 0,
+    "_rotatePerSecond": 360,
+    "_rotatePerSecondVar": 0,
+    "_endRadius": 0,
+    "_endRadiusVar": 0,
+    "_isAutoRemoveOnFinish": false
+  },
+  {
+    "__type__": "bdf71oWpgVGqpY8iB/2Vjvr",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 7
+    },
+    "_enabled": true,
+    "particle": {
+      "__id__": 9
+    }
+  }
+]
