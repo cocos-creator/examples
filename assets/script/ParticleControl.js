@@ -1,11 +1,11 @@
 var Comp = Fire.Class({
     extends: Fire.Component,
+    constructor: function() {
+      this.particle = null;
+    },
 
-    properties: {
-      particle: {
-        default: null,
-        type: Fire.ParticleSystem
-      }
+    onLoad: function() {
+      this.particle = this.getComponent('Fire.ParticleSystem');
     },
 
     // use this for initialization
@@ -13,7 +13,7 @@ var Comp = Fire.Class({
       var self = this;
       Fire.Input.on('keydown', function(event) {
         self.particle.stop();
-        self.particle.reset();
+        self.particle.play();
       });
 
     },

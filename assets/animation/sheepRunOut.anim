@@ -2,7 +2,7 @@
   "__type__": "Fire.AnimationClip",
   "_name": "",
   "_objFlags": 0,
-  "_length": 2,
+  "_length": 1,
   "frameRate": 60,
   "curveData": [
     {
@@ -11,26 +11,16 @@
       "keys": [
         {
           "frame": 0,
-          "value": -700,
+          "value": 0,
           "curve": [
-            0.09,
-            0.47,
-            0.58,
-            1
+            0.4,
+            0,
+            0.885,
+            0.6950000000000001
           ]
         },
         {
           "frame": 60,
-          "value": 700,
-          "curve": [
-            0.5,
-            0.5,
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "frame": 120,
           "value": -700,
           "curve": [
             0.5,

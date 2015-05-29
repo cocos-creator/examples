@@ -12,6 +12,12 @@
       },
       {
         "__id__": 7
+      },
+      {
+        "__id__": 11
+      },
+      {
+        "__id__": 14
       }
     ],
     "camera": {
@@ -72,7 +78,7 @@
       "b": 0,
       "a": 1
     },
-    "_size": 50,
+    "_size": 200,
     "_contentStrategy": 1
   },
   {
@@ -129,7 +135,7 @@
       "b": 0.18823529411764706,
       "a": 1
     },
-    "_size": 90.48581097958768,
+    "_size": 1361.0463918140667,
     "_contentStrategy": 1
   },
   {
@@ -185,9 +191,10 @@
     "_baseSprite": {
       "__uuid__": "70808742-c2c9-4f94-8529-dfd1dd14cf50"
     },
-    "_totalParticles": 150,
+    "_maxParticles": 100,
+    "_loop": false,
     "_duration": 0.1,
-    "_emissionRate": 1000,
+    "_emissionRate": 2000,
     "_life": 0.05,
     "_lifeVar": 0.5,
     "_startSize": 30.459629999999997,
@@ -252,7 +259,8 @@
     "_rotatePerSecondVar": 0,
     "_endRadius": 0,
     "_endRadiusVar": 0,
-    "_isAutoRemoveOnFinish": false
+    "_isAutoRemoveOnFinish": false,
+    "playOnLoad": true
   },
   {
     "__type__": "bdf71oWpgVGqpY8iB/2Vjvr",
@@ -261,9 +269,188 @@
     "entity": {
       "__id__": 7
     },
+    "_enabled": true
+  },
+  {
+    "__type__": "Fire.Entity",
+    "_name": "particle_meteor",
+    "_objFlags": 0,
+    "transform": {
+      "__id__": 12
+    },
+    "_active": true,
+    "_parent": null,
+    "_children": [],
+    "_components": [
+      {
+        "__id__": 12
+      },
+      {
+        "__id__": 13
+      }
+    ]
+  },
+  {
+    "__type__": "Fire.Transform",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 11
+    },
     "_enabled": true,
-    "particle": {
-      "__id__": 9
+    "_position": {
+      "__type__": "Fire.Vec2",
+      "x": 49.552659896143204,
+      "y": 0
+    },
+    "_rotation": 0,
+    "_scale": {
+      "__type__": "Fire.Vec2",
+      "x": 1,
+      "y": 1
     }
+  },
+  {
+    "__type__": "Fire.ParticleSystem",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 11
+    },
+    "_enabled": true,
+    "_baseSprite": {
+      "__uuid__": "acdd63c9-4a28-43a2-a6a3-f10f907b3bec"
+    },
+    "_maxParticles": 289,
+    "_loop": true,
+    "_duration": -1,
+    "_emissionRate": 262.7272727272727,
+    "_life": 1.1,
+    "_lifeVar": 0.4,
+    "_startSize": 111,
+    "_startSizeVar": 10,
+    "_endSize": 40,
+    "_endSizeVar": 0,
+    "_angle": 146,
+    "_angleVar": 50,
+    "_startColor": {
+      "__type__": "Fire.Color",
+      "r": 0.2,
+      "g": 0.4,
+      "b": 0.69,
+      "a": 1
+    },
+    "_startColorVar": {
+      "__type__": "Fire.Color",
+      "r": 0,
+      "g": 0,
+      "b": 0.2,
+      "a": 0.1
+    },
+    "_endColor": {
+      "__type__": "Fire.Color",
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 1
+    },
+    "_endColorVar": {
+      "__type__": "Fire.Color",
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "_positionType": 0,
+    "_positionVar": {
+      "__type__": "Fire.Vec2",
+      "x": 15,
+      "y": -20
+    },
+    "_startSpin": 720,
+    "_startSpinVar": 0,
+    "_endSpin": 0,
+    "_endSpinVar": 0,
+    "_emitterMode": 0,
+    "_gravity": {
+      "__type__": "Fire.Vec2",
+      "x": -1000,
+      "y": 740
+    },
+    "_speed": 244,
+    "_speedVar": 5,
+    "_radialAccel": 0,
+    "_radialAccelVar": 0,
+    "_tangentialAccel": 0,
+    "_tangentialAccelVar": 0,
+    "_startRadius": 0,
+    "_startRadiusVar": 0,
+    "_rotatePerSecond": 0,
+    "_rotatePerSecondVar": 0,
+    "_endRadius": 0,
+    "_endRadiusVar": 0,
+    "_isAutoRemoveOnFinish": false,
+    "playOnLoad": true
+  },
+  {
+    "__type__": "Fire.Entity",
+    "_name": "instruction",
+    "_objFlags": 0,
+    "transform": {
+      "__id__": 15
+    },
+    "_active": true,
+    "_parent": null,
+    "_children": [],
+    "_components": [
+      {
+        "__id__": 15
+      },
+      {
+        "__id__": 16
+      }
+    ]
+  },
+  {
+    "__type__": "Fire.Transform",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 14
+    },
+    "_enabled": true,
+    "_position": {
+      "__type__": "Fire.Vec2",
+      "x": 0,
+      "y": 69.37372385460048
+    },
+    "_rotation": 0,
+    "_scale": {
+      "__type__": "Fire.Vec2",
+      "x": 0.4,
+      "y": 0.4
+    }
+  },
+  {
+    "__type__": "Fire.BitmapText",
+    "_name": "",
+    "_objFlags": 0,
+    "entity": {
+      "__id__": 14
+    },
+    "_enabled": true,
+    "_bitmapFont": {
+      "__uuid__": "2b664820-bb7e-45a5-9564-47ef5a3e2568"
+    },
+    "_text": "Press any key to play puff particle\n",
+    "_color": {
+      "__type__": "Fire.Color",
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "_anchor": 4,
+    "_align": 0
   }
 ]
